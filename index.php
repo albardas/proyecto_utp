@@ -11,5 +11,6 @@
 	CONFIG\autoload::run();
 
 	CONFIG\enrutador::run(new CONFIG\request());
+	//COMENTARIO DE PRUEBA
 
  ?>

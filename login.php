@@ -26,23 +26,27 @@
     
 	<style type="text/css">
 	body{
-		background: #00BCD4;
+		background: #00796b;
 	}
 	.login-card-user{
 		width: 100%;
-		max-width: 340px;
+		max-width: 390px;
 		position: absolute;
-		top: 15%;
+		top: 19%;
 		left: 50%;
-		margin-left: -160px;
-	}
+        margin-left: -210px;
+        box-shadow: 0px 0px 5px 1px #f2f7f5;
+    }
+    .login-card-user:hover{
+        box-shadow: 1px -1px 7px 2px #f2f7f5;
+    }
 	</style>
 </head>
 <body>
 	<div class="card login-card-user">
         <div class="header">
             <h2 class="text-upprcase text-center">
-               Admin
+               Sistema de Registro de Invitados
             </h2>
         </div>
         <div class="body">

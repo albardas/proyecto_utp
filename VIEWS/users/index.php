@@ -4,28 +4,29 @@
 <section class="content">
     <div class="container-fluid">
         <div class="row clearfix">
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+            <div class="col-lg-12 col-md-8 col-sm-10 col-xs-12">
                 <div class="card">
                     <div class="header">
                         <h2>
-                         USUARIOS <button data-toggle="modal" data-target="#new_user" class="btn bg-deep-purple waves-effect waves-light right"><i class="fa fa-user"></i> Nuevo Usuario</button>
+                         USUARIOS <button data-toggle="modal" data-target="#new_user" class="btn bg-deep-purple waves-effect waves-light right"><i class="material-icons">perm_identity</i> Nuevo Usuario</button>
                         </h2>
                    
                     </div>              
-                </div>
-                <div class="table-responsive">
-                    <table class="table" id="tbl_users" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Apellidos</th>
-                                <th>Correo</th>
-                                <th>Telefono</th>
-                                <th>Contraseña</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                    </table>
+              
+                    <div class="table-responsive">
+                        <table class="table" id="tbl_users" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Apellidos</th>
+                                    <th>Correo</th>
+                                    <th>Telefono</th>
+                                    <th>Contraseña</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,11 +1,12 @@
 <section class="content">
     <div class="container-fluid">        
         <div class="row clearfix">
-            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">
+            <div class="col-lg-12 col-md-8 col-sm-10 col-xs-12">
                 <div class="card">
                     <div class="header">
                         <h2>
-                            registro de asistentesss <button data-toggle="modal" data-target="#new_assitan" class="btn bg-blue waves-effect waves-light right">+ Invitado</button>
+                            registro de asistentesss <button data-toggle="modal" data-target="#new_assitan" class="btn bg-blue waves-effect waves-light right">Invitado <i class="material-icons">person</i> </button>
+                           
                         </h2>
                     
                     </div>

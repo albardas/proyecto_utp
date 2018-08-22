@@ -94,9 +94,9 @@ switch ($_GET['op']) {
 	break;
 
 	case 'login':
-		$name = $_POST['name'];
+		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$sqlAuth = "SELECT * FROM users WHERE name = '$name' && password = '$password' ";
+		$sqlAuth = "SELECT * FROM users WHERE email = '$email' && password = '$password' ";
 		$resultAuth = $conn->prepare($sqlAuth);
 		$resultAuth->execute();
 		$filas = $resultAuth->rowCount();

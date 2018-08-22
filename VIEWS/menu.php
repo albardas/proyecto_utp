@@ -208,9 +208,9 @@
             <!-- User Info -->
 
 
-            <div class="user-info" style="background: url(<?=URL?>/VIEWS/resources/IMG/user-img-background.jpg);">
+            <div class="user-info" style="background: url(<?=URL?>/VIEWS/resources/IMG/animation-bg.jpg);">
                 <div class="image">
-                    <img src="<?=URL?>/VIEWS/resources/IMG/user.png" width="48" height="48" alt="User" />
+                    <img src="<?=URL?>/VIEWS/resources/IMG/profile-avatar.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container ">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$_SESSION['name']?> </div>
@@ -233,7 +233,7 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MENU DE NAVEGACION</li>
+                    <li class="header">MENU</li>
                     <li class="active">
                         <a href="<?=URL?>users/">
                             <i class="material-icons">supervised_user_circle</i>
@@ -248,7 +248,7 @@
                     </li>
                     <li>
                         <a href="<?=URL?>special/">
-                            <i class="material-icons">assignment</i>
+                            <i class="material-icons">assignment_ind</i>
                             
                             <span>Invitados especiales</span>
                         </a>

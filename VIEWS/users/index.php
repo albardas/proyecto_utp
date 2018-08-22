@@ -4,11 +4,11 @@
 <section class="content">
     <div class="container-fluid">
         <div class="row clearfix">
-            <div class="col-lg-12 col-md-8 col-sm-10 col-xs-12">
+            <div class="col-lg-6 col-lg-offset-1 col-md-8 col-sm-10 col-xs-12">
                 <div class="card">
                     <div class="header">
-                        <h2>
-                         USUARIOS <button data-toggle="modal" data-target="#new_user" class="btn bg-deep-purple waves-effect waves-light right"><i class="material-icons">perm_identity</i> Nuevo Usuario</button>
+                        <h2 class="text-center">
+                         USUARIOS  <button data-toggle="modal" data-target="#new_user" class="btn btn-warning waves-effect waves-light m-t--10 pull-right"><i class="material-icons">perm_identity</i> Nuevo Usuario</button>
                         </h2>
                    
                     </div>              

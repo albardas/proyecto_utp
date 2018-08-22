@@ -1,5 +1,6 @@
 ﻿/* Navbar ====================================== */
 @import url(materialize.css);
+
 .navbar {
   font-family: "Roboto", sans-serif;
   -webkit-border-radius: 0;
@@ -2402,7 +2403,7 @@ a {
   animation: none !important; }
 
 section.content {
-  margin: 100px 15px 0 315px;
+  margin: 100px 15px 0 100px;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -2507,7 +2508,7 @@ section.content {
 .btn-warning:hover,
 .btn-warning:active,
 .btn-warning:focus {
-  background-color: #ff9600 !important; }
+  background-color: #ef6c00 !important; }
 
 .btn-danger,
 .btn-danger:hover,
@@ -2531,7 +2532,7 @@ section.content {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: #068a5e !important; }
+  background-color: #FF5722 !important; }
 
 .btn-default,
 .btn-default:hover,
@@ -2567,6 +2568,20 @@ section.content {
   -ms-box-shadow: none !important;
   box-shadow: none !important;
   border: none !important; }
+
+  /* ESTILOS PROPIOS */
+  .theme-teal .navbar {
+    background-color: #FF5722!important;
+  }
+  body{
+    background: #ecf0f5!important;
+  }
+  .table-responsive{
+    padding:10px 25px!important;
+  }
+  body.theme-teal .sidebar .legal .copyright a{
+    color: #FF5722!important;
+  }
 
 /* noUISlider ================================== */
 .noUi-target {
@@ -5861,7 +5876,23 @@ fieldset[disabled] .form-control {
   color: #bbb; }
 
 .pagination li.active a {
-  background-color: #2196F3; }
+  background-color: #ffa726;
+ border: none; 
+}
+
+.pagination li.active :hover {
+  background-color: #fb8c00!important;
+}
+
+/* .pagination>.active>a, 
+.pagination>.active>a:focus,
+ .pagination>.active>a:hover,
+  .pagination>.active>span, 
+  .pagination>.active>span:focus, 
+  .pagination>.active>span:hover{
+      background-color: #e65100!important;
+      border-color: #e65100!important;
+} */
 
 .pagination li {
   -webkit-border-radius: 0;
@@ -7468,6 +7499,7 @@ fieldset[disabled] .form-control {
   margin-left: 0;
   z-index: 99999999; }
 
+/* sidebar-left se modifico la posicion a right */
 .sidebar {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -7481,7 +7513,8 @@ fieldset[disabled] .form-control {
   height: calc(100vh - 70px);
   position: fixed;
   top: 70px;
-  left: 0;
+  left: auto;
+  right:0px;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -7541,7 +7574,7 @@ fieldset[disabled] .form-control {
         overflow: hidden;
         font-size: 14px;
         max-width: 200px;
-        color: #fff; }
+        color: #000; }
       .sidebar .user-info .info-container .email {
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
@@ -7550,7 +7583,7 @@ fieldset[disabled] .form-control {
         overflow: hidden;
         font-size: 12px;
         max-width: 200px;
-        color: #fff; }
+        color: #000; }
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
         right: -3px;
@@ -7560,7 +7593,7 @@ fieldset[disabled] .form-control {
         -ms-box-shadow: none;
         box-shadow: none;
         cursor: pointer;
-        color: #fff; }
+        color: #000; }
   .sidebar .menu {
     position: relative;
     overflow-y: auto;

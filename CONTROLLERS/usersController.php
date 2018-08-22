@@ -14,7 +14,7 @@
 		}
 
 		public function index(){
-			echo "hola";
+			// echo "hola";
 		}
 
 

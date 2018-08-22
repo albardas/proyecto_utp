@@ -51,10 +51,10 @@
         </div>
         <div class="body">
             <form onsubmit="login(event,this)">
-                <label for="name">Usuario:</label>
+                <label for="name">Email:</label>
                 <div class="form-group">
                     <div class="form-line">
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Usuario" required>
+                        <input type="email" id="name" name="email" class="form-control" placeholder="Usuario" required>
                     </div>
                 </div>
                 <label for="password">Contraseña:</label>

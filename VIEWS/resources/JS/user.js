@@ -16,7 +16,7 @@ function listarUsuarios() {
         buttons: [
             {
               extend: 'excelHtml5',
-              text: '<strong><i class="fa fa-file-excel-o"></i> Excel</strong>',
+              text: '<strong><i class=""><span class="icon-microsoftexcel"></span></i></strong>',
               className: 'btn btn-success',
               title: "Reporte de Usuarios",
               exportOptions: {
@@ -26,7 +26,7 @@ function listarUsuarios() {
             },
             {
               extend: 'pdfHtml5',
-              text: '<strong><i class="fa fa-file-pdf-o"></i> PDF</strong>',
+              text: '<strong><i class=""><span class="icon-picture_as_pdf"></span></i></strong>',
               className: 'btn btn-danger',
               title: "Reporte de Usuarios",
               exportOptions: {

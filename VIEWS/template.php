@@ -48,6 +48,8 @@ if (!isset($_SESSION['id_user'])) {
         <!-- Custom Css -->
         <link href="<?=URL?>VIEWS/resources/CSS/style.css" rel="stylesheet">
 
+        <!-- iconos -->
+        
         <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
         <link href="<?=URL?>VIEWS/resources/CSS/themes/all-themes.css" rel="stylesheet" />
         <link rel="stylesheet" href="<?= URL ?>VIEWS/resources/CSS/bootstrap-select.min.css">
@@ -57,6 +59,7 @@ if (!isset($_SESSION['id_user'])) {
         <link rel="stylesheet" href="<?=URL?>VIEWS/resources/CSS/dataTables/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="<?=URL?>VIEWS/resources/CSS/dataTables/buttons.bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="<?=URL?>VIEWS/resources/CSS/dataTables/responsive.bootstrap.css"/>
+        <link href="<?=URL?>VIEWS/resources/fonts/style.css" rel="stylesheet">
     </head>
     
     <body class="theme-teal">

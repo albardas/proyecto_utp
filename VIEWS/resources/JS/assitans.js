@@ -16,8 +16,8 @@ function listarAsistentes() {
         buttons: [
             {
                 extend: 'excelHtml5',
-                text: '<strong><i class="fa fa-file-excel-o"></i> Excel</strong>',
-                className: 'btn btn-success',
+                text: '<strong><i class=""><span class="icon-microsoftexcel White"></span></i></strong>',
+                className: 'btn btn-success ',
                 title: "Reporte de Invitados",
                 exportOptions: {
                 columns: [ 0, 1, 2, 3, 4, 5, 6,7,8 ]
@@ -26,7 +26,7 @@ function listarAsistentes() {
             },
             {
                 extend: 'pdfHtml5',
-                text: '<strong><i class="fa fa-file-pdf-o"></i> PDF</strong>',
+                text: '<strong><i class=""><span class="icon-picture_as_pdf"></span></i></strong>',
                 className: 'btn btn-danger',
                 title: "Reporte de Invitados",
                 exportOptions: {

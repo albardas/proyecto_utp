@@ -5,7 +5,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            registro de asistentes <button data-toggle="modal" data-target="#new_assitan" class="btn bg-blue waves-effect waves-light right">+ Invitado</button>
+                            registro de asistentesss <button data-toggle="modal" data-target="#new_assitan" class="btn bg-blue waves-effect waves-light right">+ Invitado</button>
                         </h2>
                     
                     </div>

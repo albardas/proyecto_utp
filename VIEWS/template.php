@@ -12,12 +12,12 @@
 ?>
 <?php
 if (!isset($_SESSION['id_user'])) {
-    echo'<script>window.location.href = "/registro_yair/login.php";</script>';
+    echo'<script>window.location.href = "/proyecto_utp/login.php";</script>';
 } ?>
 
  <?php if (array_key_exists('logout', $_GET)) { 
     session_unset();
-    echo '<script>window.location.href = "/registro_yair/login.php";</script>';
+    echo '<script>window.location.href = "/proyecto_utp/login.php";</script>';
 } ?>
 <!DOCTYPE html>
 <html>

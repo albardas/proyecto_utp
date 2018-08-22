@@ -1,4 +1,4 @@
-var dominio = '/registro_yair/';
+var dominio = '/proyecto_utp/';
 $.extend($.fn.dataTable.defaults, {
     responsive: true,
     scrollY: 300,

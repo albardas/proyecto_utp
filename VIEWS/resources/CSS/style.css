@@ -7923,7 +7923,25 @@ fieldset[disabled] .form-control {
     border: none; }
 
 /* Jquery DataTable ============================ */
-.dataTables_wrapper {
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c!important;
+    border-color: #4cae4c!important;
+}
+.btn-success:hover{
+    background-color: #5cb85c!important;
+    border-color: #4cae4c!important;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f!important;
+    border-color: #d43f3a!important;
+}
+.btn-danger:hover{
+  background-color: #d9534f!important;
+  border-color: #d43f3a!important;
+}
+/*.dataTables_wrapper {
   position: relative; }
   .dataTables_wrapper select {
     border: none;
@@ -7993,7 +8011,7 @@ fieldset[disabled] .form-control {
     color: #777; }
   .dt-button-info div {
     color: #777;
-    margin-bottom: 20px; }
+    margin-bottom: 20px; }*/
 
 /* Light Gallery ================================ */
 .lg-outer .lg-thumb-item,

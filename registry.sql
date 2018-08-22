@@ -1,82 +1,157 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.7.1
--- http://www.phpmyadmin.net
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2018 a las 04:11:05
--- Versión del servidor: 5.6.20
--- Versión de PHP: 5.5.15
+-- Tiempo de generación: 21-08-2018 a las 20:18:12
+-- Versión del servidor: 10.1.26-MariaDB
+-- Versión de PHP: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
-CREATE DATABASE registry;
-USE registry;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
+--
+-- Base de datos: `registry`
+--
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `assitans`
+--
+
+CREATE TABLE `assitans` (
+  `id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `last_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `phone` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `gender` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `city` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `date` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `time` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_spanish_ci
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `special_assitans`
+--
+
+CREATE TABLE `special_assitans` (
+  `id` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `last_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `phone` varchar(15) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `gender` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `city` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `company` varchar(40) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `position` varchar(40) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `representative` varchar(40) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `date` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `time` varchar(20) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_spanish_ci
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int NOT NULL auto_increment,
-  `name` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `last_name` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `email` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `phone` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  primary key(id)
-) ENGINE=InnoDB;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `last_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  `phone` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Estructura de tabla para la tabla `assitans`
+-- Volcado de datos para la tabla `users`
 --
-CREATE TABLE IF NOT EXISTS `assitans` (
-  `id` int NOT NULL auto_increment,
-  `id_user` int NOT NULL ,
-  `name` varchar(50) COLLATE utf8_spanish_ci ,
-  `last_name` varchar(50) COLLATE utf8_spanish_ci,
-  `email` varchar(50) COLLATE utf8_spanish_ci ,
-  `phone` varchar(15) COLLATE utf8_spanish_ci ,
-  `gender` varchar(30) COLLATE utf8_spanish_ci ,
-  `city` varchar(50) COLLATE utf8_spanish_ci ,
-  `date` varchar(20) COLLATE utf8_spanish_ci ,
-  `time` varchar(20) COLLATE utf8_spanish_ci ,
-  `description` text COLLATE utf8_spanish_ci ,
-  primary key(id)
-) ENGINE=InnoDB;
+
+INSERT INTO `users` (`id`, `name`, `last_name`, `email`, `password`, `phone`) VALUES
+(2, 'irbing edit', 'lopez edit', 'irbin_edit@gmail.com', '12345678', '012345679'),
+(4, 'yair', 'lopez', 'yair@gmail.com', '123456', '4564654564');
 
 --
--- Estructura de tabla para la tabla `special_assitans`
+-- Índices para tablas volcadas
 --
-CREATE TABLE IF NOT EXISTS `special_assitans` (
-  `id` int NOT NULL auto_increment,
-  `id_user` int NOT NULL ,
-  `name` varchar(50) COLLATE utf8_spanish_ci ,
-  `last_name` varchar(50) COLLATE utf8_spanish_ci ,
-  `email` varchar(50) COLLATE utf8_spanish_ci ,
-  `phone` varchar(15) COLLATE utf8_spanish_ci ,
-  `gender` varchar(30) COLLATE utf8_spanish_ci ,
-  `city` varchar(50) COLLATE utf8_spanish_ci ,
-  `company` varchar(40) COLLATE utf8_spanish_ci ,
-  `position` varchar(40) COLLATE utf8_spanish_ci ,
-  `status` int COLLATE utf8_spanish_ci ,
-  `representative` varchar(40) COLLATE utf8_spanish_ci ,
-  `date` varchar(20) COLLATE utf8_spanish_ci ,
-  `time` varchar(20) COLLATE utf8_spanish_ci ,
-  `description` text COLLATE utf8_spanish_ci ,
-  primary key(id)
-) ENGINE=InnoDB;
 
 --
--- 	Relaciones entre las tablas
+-- Indices de la tabla `assitans`
 --
-alter table assitans add foreign key(id_user) references users(id);
-alter table special_assitans add foreign key(id_user) references users(id);
+ALTER TABLE `assitans`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user` (`id_user`);
 
+--
+-- Indices de la tabla `special_assitans`
+--
+ALTER TABLE `special_assitans`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user` (`id_user`);
+
+--
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `assitans`
+--
+ALTER TABLE `assitans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `special_assitans`
+--
+ALTER TABLE `special_assitans`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `assitans`
+--
+ALTER TABLE `assitans`
+  ADD CONSTRAINT `assitans_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
+
+--
+-- Filtros para la tabla `special_assitans`
+--
+ALTER TABLE `special_assitans`
+  ADD CONSTRAINT `special_assitans_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
